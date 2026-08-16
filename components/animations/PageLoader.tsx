@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { profile } from "../../data/content";
 
 export function PageLoader({ onComplete }: { onComplete: () => void }) {
   const [visible, setVisible] = useState(false);
@@ -17,7 +18,7 @@ export function PageLoader({ onComplete }: { onComplete: () => void }) {
       window.sessionStorage.setItem("swetank-loader-seen", "true");
       setVisible(false);
       window.setTimeout(onComplete, 340);
-    }, 1120);
+    }, 1100);
     return () => window.clearTimeout(done);
   }, [onComplete]);
 
@@ -25,8 +26,8 @@ export function PageLoader({ onComplete }: { onComplete: () => void }) {
   return <div className="page-loader" role="status" aria-label="Loading portfolio">
     <div className="loader-content">
       <p>INITIALIZING <span className="loader-dot">●</span></p>
-      <div className="loader-name">SWETANK<br /><em>PANDEY</em></div>
-      <small>BUSINESS ANALYTICS</small>
+      <div className="loader-name">{profile.firstName.toUpperCase()}<br /><em>{profile.lastName.toUpperCase()}</em></div>
+      <small>BUSINESS ANALYTICS · SYSTEMS</small>
       <div className="loader-track"><i /></div>
       <p className="loader-ready">SYSTEM READY</p>
     </div>
