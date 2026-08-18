@@ -29,7 +29,7 @@ export function Hero() {
           Math.max(0, window.scrollY / (window.innerHeight * 0.75))
         );
 
-        el.style.opacity = `${1 - progress * 0.85}`;
+       // el.style.opacity = `${1 - progress * 0.85}`;
         el.style.transform = `translate3d(0, ${progress * -40}px, 0) scale(${1 - progress * 0.04})`;
       });
     };

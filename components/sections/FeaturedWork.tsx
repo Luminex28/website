@@ -54,8 +54,8 @@ function ProjectShowcase({ project }: { project: Project }) {
           {project.repoUrl ? (
             <a className="button" href={project.repoUrl} target="_blank" rel="noreferrer">View source ↗</a>
           ) : (
-            <span className="button unavailable" aria-disabled="true" title="Repository link pending">
-              SOURCE LINK PENDING
+            <span className="button unavailable" aria-disabled="true" title="IN PROGRESS">
+              IN PROGRESS
             </span>
           )}
         </div>

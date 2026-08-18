@@ -18,7 +18,7 @@ export function ProjectHero({ project }: { project: Project }) {
         {project.repoUrl ? (
           <a className="button primary" href={project.repoUrl} target="_blank" rel="noreferrer">View source ↗</a>
         ) : (
-          <span className="button unavailable" aria-disabled="true" title="Repository link pending">SOURCE LINK PENDING</span>
+          <span className="button unavailable" aria-disabled="true" title="IN PROGRESS">IN PROGRESS</span>
         )}
         {project.demoUrl && <a className="button" href={project.demoUrl} target="_blank" rel="noreferrer">Live demo ↗</a>}
       </div>

@@ -9,7 +9,7 @@ export const profile = {
   lastName: "Pandey",
   headline: "Aspiring Data Analyst",
   headlineTools: ["SQL", "Excel", "Power BI", "Linux", "Python"],
-  location: "Kanpur, Uttar Pradesh, India",
+  location: "Delhi, New Delhi, India",
   email: "swetank2020@gmail.com",
   // Direct public contact email, shown on the contact section/page so people
   // can reach out without the form.
@@ -47,7 +47,7 @@ export const about = {
   facts: [
     { label: "EDUCATION", value: "BBA Business Intelligence & Analytics" },
     { label: "INSTITUTION", value: "K.R. Mangalam University" },
-    { label: "BASED IN", value: "Kanpur, India" },
+    { label: "BASED IN", value: "Delhi, India" },
     { label: "FOCUS", value: "Data · Business · Systems" },
   ],
 };
