@@ -51,7 +51,17 @@ export function ProjectCaseStudy({
           <span className="heading-line" />
         </Reveal>
         <Reveal className="showcase-visual" style={{ marginBottom: 32 }}>
-          <ProjectVisual variant={project.accentMotif} />
+          <ProjectVisual
+            variant={project.accentMotif}
+            image={
+              project.slug === "lumin"
+                ? "/assets/photos/projects/lumin/Lumin 1.png"
+                : project.slug === "taskl"
+                  ? "/assets/photos/projects/TaskL/TaskL.png"
+                  : undefined
+  }
+  alt={`${project.name} project preview`}
+/>
         </Reveal>
         <Reveal delay={80}><p className="case-study-lead">{project.architectureNote}</p></Reveal>
       </section>

@@ -18,7 +18,17 @@ function ProjectShowcase({ project }: { project: Project }) {
       </Reveal>
       <Reveal delay={120} className="showcase-visual">
         <Link href={`/projects/${project.slug}`} aria-label={`View ${project.name} case study`}>
-          <ProjectVisual variant={project.accentMotif} />
+          <ProjectVisual
+            variant={project.accentMotif}
+            image={
+              project.slug === "lumin"
+                ? "/assets/photos/projects/lumin/Lumin 1.png"
+                : project.slug === "taskl"
+                  ? "/assets/photos/projects/TaskL/TaskL.png"
+                  : undefined
+  }
+  alt={`${project.name} project preview`}
+/>
         </Link>
       </Reveal>
       <div className="showcase-body">

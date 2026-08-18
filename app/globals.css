@@ -414,3 +414,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .reveal-on-scroll { opacity: 1; transform: none; filter: none; }
   .cursor-glow { display: none !important; }
 }
+
+.project-visual-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.project-visual-image img {
+  object-fit: contain;
+  object-position: center;
+}

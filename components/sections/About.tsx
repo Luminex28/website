@@ -1,5 +1,6 @@
 import { Reveal } from "../animations/Reveal";
 import { about } from "../../data/content";
+import Image from "next/image";
 
 export function About() {
   return (
